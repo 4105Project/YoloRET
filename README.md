@@ -1,1 +1,13 @@
 # YoloRET
+
+Note: change the below to your yoloret code directory
+C:/Users/lucas/Documents/GitHub/yoloret/code
+
+Train (stage 1)
+python main.py --mode=TRAIN --train_dataset=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/train/annotations_519.txt --val_dataset=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/valid/annotations_48.txt --freeze --classes_path=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/train/sidewalkclasses_0.txt --backbone=EFFICIENTNETB3 --input_size=416 --input_size=416 --batch_size=16
+Train (fine-tune model)
+python main.py --mode=TRAIN --train_dataset=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/train/annotations_519.txt --val_dataset=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/valid/annotations_48.txt --train_unfreeze=C:/Users/lucas/Documents/GitHub/yoloret/code/logs/efficientnetb3_2022-12-13/efficientnetb3_trained_weights_stage_1.h5 --classes_path=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/train/sidewalkclasses_0.txt --backbone=EFFICIENTNETB3 --input_size=416 --input_size=416 --batch_size=6
+Test Model
+python main.py --mode=MAP --model=C:/Users/lucas/Documents/GitHub/yoloret/code/logs/efficientnetb3_2022-12-13/efficientnetb3_trained_weights_final.h5 --test_dataset=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/annotations_33.txt --classes_path=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/train/sidewalkclasses_0.txt --backbone=EFFICIENTNETB3 --input_size=416 --input_size=416 --batch_size=16
+Run on model on video feed
+python main.py --mode=VIDEO --model=C:/Users/lucas/Documents/GitHub/yoloret/code/logs/efficientnetb3_2022-12-13/efficientnetb3_trained_weights_final.h5 --input_size=416 --input_size=416 --backbone=EFFICIENTNETB3 --input=0
