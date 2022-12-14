@@ -2,8 +2,7 @@
 
 Note: change the below to your yoloret code directory
 C:/Users/lucas/Documents/GitHub/yoloret/code
-```
-bash
+```bash
 Train (stage 1)
 
 python main.py --mode=TRAIN --train_dataset=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/train/annotations_519.txt --val_dataset=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/valid/annotations_48.txt --freeze --classes_path=C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/train/sidewalkclasses_0.txt --backbone=EFFICIENTNETB3 --input_size=416 --input_size=416 --batch_size=16
