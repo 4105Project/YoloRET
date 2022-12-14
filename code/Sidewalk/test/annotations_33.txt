@@ -1,0 +1,33 @@
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0173_jpg.rf.0a6878d8b16f265d9a62bae6ce1c9d49.jpg 0 216 416 416 1 1 216 220 351 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0164_jpg.rf.2dc1f236ab62df07f04fb877b3fd8215.jpg 0 242 416 416 1 2 225 415 286 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0013_jpg.rf.1c6257242884b54608aaec6c1c1caf15.jpg
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0137_jpg.rf.590a127a54d5116a6af0735678a785f0.jpg 0 212 416 416 1 0 234 185 304 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0019_jpg.rf.40a4719c6773de756df3b9536ebbde41.jpg
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0208_jpg.rf.7bc673ee02fa4e9a45b43dc913e28f1a.jpg 0 224 416 416 1
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0179_jpg.rf.4e05cc938d5f1bd97e5f5ec15f0ad2a3.jpg 0 214 416 416 1 234 202 416 312 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0181_jpg.rf.4c6cdbba1870afe164b0d263db4cb66e.jpg 0 220 416 416 1 282 226 416 316 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0062_jpg.rf.80ab049a026a04dfbaaac3d039f43e82.jpg 0 222 416 416 1 1 213 196 295 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0074_jpg.rf.434efe1b7a2a18265d9866d3241e2c58.jpg 0 223 416 416 1 287 217 416 281 0 1 214 201 248 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0110_jpg.rf.3b8491040fd7e97f081172ff420612b9.jpg 0 222 416 416 1 0 206 414 274 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0041_jpg.rf.8c4214e8b18ae7c87c1def60605757ae.jpg 0 212 416 416 1
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0231_jpg.rf.950d363442c789378b225f1735342d98.jpg 0 218 416 416 1 0 209 166 243 0 182 210 416 283 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0124_jpg.rf.b635e25d3c7e26a510a3347b8c2d2e0a.jpg 0 217 416 416 1
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0146_jpg.rf.2703c4126706199729d81b86e16953e4.jpg 0 217 416 416 1 216 209 416 287 0 0 207 146 311 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0064_jpg.rf.040b22ce6fba9c0967377526dbc8a06f.jpg 0 222 416 416 1 280 233 416 294 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0201_jpg.rf.12272b45ca88ddaf18f6cfb3dee6340b.jpg 0 237 416 416 1 0 234 202 273 0 231 230 416 291 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0258_jpg.rf.0cd9bed67735217c6978ec47a96518d8.jpg 0 222 416 416 1 170 215 415 313 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0093_jpg.rf.0998e23c94c90f58dc0d7daa579f6782.jpg 0 216 416 416 1 0 213 164 260 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0172_jpg.rf.30c735f581b61cc1cf1543ac21414dfa.jpg 0 212 416 416 1 224 210 416 309 0 0 126 173 243 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0118_jpg.rf.b8ff44a3f2da3a44d77a8486e9027a0a.jpg 0 218 416 416 1
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0103_jpg.rf.932db6bbb521524187bc38e3e6d34445.jpg 0 216 416 416 1 38 223 416 394 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0266_jpg.rf.c6aa1e2a21750b1fd237eaea021ba85a.jpg 2 225 416 413 1 259 221 416 355 0 0 208 158 247 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0161_jpg.rf.bca9126125e8d910d3c7f3a37d1ab961.jpg 0 213 416 416 1 135 223 416 374 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0116_jpg.rf.cc980309ab4677ec246eaa8e47ac6489.jpg 0 221 416 416 1 0 215 228 268 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0042_jpg.rf.d3e716bc5ad4d4c668a103222d29079e.jpg 0 211 416 416 1
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0171_jpg.rf.dc0bc76255e928ddc6966152e589a8ad.jpg 0 211 416 416 1 234 212 416 288 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0249_jpg.rf.e8341d35dc04d2b7a8e65fba4f493363.jpg 0 228 416 416 1 283 220 416 263 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0254_jpg.rf.e31ebc63ce2d22177f0e26000ffe61cd.jpg 3 229 416 416 1 0 223 176 260 0 235 210 416 282 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0277_jpg.rf.e37a296c00a53231607b73a1c8fc1dbd.jpg
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0252_jpg.rf.edc1a686bd4bfea57dcde792ecdda421.jpg 0 223 416 416 1 201 218 413 274 0 0 208 150 249 0
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0027_jpg.rf.f64fda315c6a9bf23a0efdbcb5982259.jpg
+C:/Users/lucas/Documents/GitHub/yoloret/code/Sidewalk/test/frame0278_jpg.rf.ffa75b08f0dfbb2c5463d99483e15e74.jpg
