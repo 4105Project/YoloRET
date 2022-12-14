@@ -467,68 +467,29 @@ def detect_video(yolo: YOLO, video_path: str, output_path: str = ""):
         #cv2.imshow("Camera In",image)
         img_str = cv2.imencode('.jpg', np.array(image))[1].tostring()
         draw = ImageDraw.Draw(image)
-        if len(trackers) > 0:
-            for tracker in trackers:
-                success, box = tracker.update(frame)
-                if success is not True:
-                    trackers.pop(tracker)
-                    continue
-                left, top, width, height = box
-                right = left + width
-                bottom = top + height
+        boxes, scores, classes = yolo.detect_image(img_str, False)
+        for i, c in enumerate(classes):
+            predicted_class = yolo.class_names[c]
+            top, left, bottom, right = boxes[i]
+            score = scores[i]
+            height = abs(bottom - top)
+            width = abs(right - left)
+            label = '{} {:.2f}'.format(predicted_class,score)
+            label_size = draw.textsize(label, font)
+            if top - label_size[1] >= 0:
+                text_origin = np.array([left, top - label_size[1]])
+            else:
+                text_origin = np.array([left, top + 1])
 
-                label = '{}'.format(trackers[tracker])
-
-                label_size = draw.textsize(label, font)
-                if top - label_size[1] >= 0:
-                    text_origin = np.array([left, top - label_size[1]])
-                else:
-                    text_origin = np.array([left, top + 1])
-
-                # My kingdom for a good redistributable image drawing library.
-                for i in range(thickness):
-                    draw.rectangle([left + i, top + i, right - i, bottom - i],
-                                   outline=yolo.colors[c])
-                draw.rectangle(
-                    [tuple(text_origin),
-                     tuple(text_origin + label_size)],
-                    fill=yolo.colors[c])
-                draw.text(text_origin, label, fill=(0, 0, 0), font=font)
-                frame_count += 1
-                if frame_count == 100:
-                    for tracker in trackers:
-                        del tracker
-                    trackers = {}
-                    frame_count = 0
-        else:
-            boxes, scores, classes = yolo.detect_image(img_str, False)
-            for i, c in enumerate(classes):
-                predicted_class = yolo.class_names[c]
-                top, left, bottom, right = boxes[i]
-                height = abs(bottom - top)
-                width = abs(right - left)
-                tracker = cv2.TrackerCSRT_create()
-                #tracker = cv2.TrackerKCF_create()
-                #tracker = cv2.TrackerMOSSE_create()
-                tracker.init(frame, (left, top, width, height))
-                trackers[tracker] = predicted_class
-
-                label = '{}'.format(predicted_class)
-                label_size = draw.textsize(label, font)
-                if top - label_size[1] >= 0:
-                    text_origin = np.array([left, top - label_size[1]])
-                else:
-                    text_origin = np.array([left, top + 1])
-
-                # My kingdom for a good redistributable image drawing library.
-                for i in range(thickness):
-                    draw.rectangle([left + i, top + i, right - i, bottom - i],
-                                   outline=yolo.colors[c])
-                draw.rectangle(
-                    [tuple(text_origin),
-                     tuple(text_origin + label_size)],
-                    fill=yolo.colors[c])
-                draw.text(text_origin, label, fill=(0, 0, 0), font=font)
+            # My kingdom for a good redistributable image drawing library.
+            for i in range(thickness):
+                draw.rectangle([left + i, top + i, right - i, bottom - i],
+                                outline=yolo.colors[c])
+            draw.rectangle(
+                [tuple(text_origin),
+                    tuple(text_origin + label_size)],
+                fill=yolo.colors[c])
+            draw.text(text_origin, label, fill=(0, 0, 0), font=font)
         del draw
         result = np.asarray(image)
         curr_time = timer()
