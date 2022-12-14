@@ -240,7 +240,7 @@ class YOLO(object):
             image_data = image.read()
         start = timer()
         out_boxes, out_scores, out_classes = self.yolo_model([image_data])
-        # print(image_data.shape)
+        #print(image_data.shape)
         # image_main = Image.new('RGB', (320*3, 220*3))
         # for i in range(9):
         #     heatmap, letterbox_input = self.yolo_model([image_data], layer_num=i)
@@ -444,9 +444,10 @@ def detect_video(yolo: YOLO, video_path: str, output_path: str = ""):
         raise IOError("Couldn't open webcam or video")
     video_FourCC = int(vid.get(cv2.CAP_PROP_FOURCC))
     video_fps = vid.get(cv2.CAP_PROP_FPS)
-    #video_size = (int(vid.get(cv2.CAP_PROP_FRAME_WIDTH)),
-                  #int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT)))
-    video_size = (416,416)
+    video_size = (int(vid.get(cv2.CAP_PROP_FRAME_WIDTH)),
+                  int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT)))
+    print(video_size)
+    #video_size = (416,416)
     isOutput = True if output_path != "" else False
     if isOutput:
         print("!!! TYPE:", type(output_path), type(video_FourCC),
@@ -456,14 +457,14 @@ def detect_video(yolo: YOLO, video_path: str, output_path: str = ""):
     curr_fps = 0
     fps = "FPS: ??"
     prev_time = timer()
-
     trackers = {}
-    font = ImageFont.truetype(font='font/FiraMono-Medium.otf', size=30)
+    font = ImageFont.truetype("arial.ttf", 30)
     thickness = 1
     frame_count = 0
     while True:
         return_value, frame = vid.read()
         image = Image.fromarray(frame)
+        #cv2.imshow("Camera In",image)
         img_str = cv2.imencode('.jpg', np.array(image))[1].tostring()
         draw = ImageDraw.Draw(image)
         if len(trackers) > 0:
